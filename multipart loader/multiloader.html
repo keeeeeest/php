@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма загрузки нескольких файлов</title>
+    <style>
+        form div {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="multiloader.php" method="post" enctype="multipart/form-data">
+        <div>
+            <label> Выберите файлы: </label>
+        </div>
+        <div>
+            <input type="file" accept="image/*" name="userfile[]" multiple>
+        </div>
+        <div>
+            <input type="submit" name="Submit" value="Загрузить" >
+        </div>
+    </form>
+</body>
+</html>
